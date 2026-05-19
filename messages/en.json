@@ -1,0 +1,97 @@
+{
+  "nav": {
+    "collections": "Collections",
+    "about": "About",
+    "care": "Care Guide",
+    "contact": "Contact",
+    "cart": "Cart"
+  },
+  "hero": {
+    "tagline": "Chilotean loom woolen workshop",
+    "sub": "Virgin wool · Natural dyes · Hand embroidered",
+    "cta": "Shop the Collection"
+  },
+  "brand": {
+    "line1": "From Quellón, Chiloé, every garment is born from the traditional Chilote loom.",
+    "line2": "Virgin sheep wool, dyed with southern herbs, hand-embroidered by María Ruth.",
+    "line3": "Each piece is one of a kind — you carry a piece of Isla Grande with you."
+  },
+  "collections": {
+    "title": "Collections"
+  },
+  "craft": {
+    "title": "The Craft",
+    "p1": "The Chilote loom is an ancestral technique brought by Spanish settlers to the Chiloé archipelago. At Ayenantú, we keep that tradition alive using wooden looms to weave every garment from scratch.",
+    "p2": "The wool comes directly from sheep raised on Isla Grande. We dye it with native plants — maqui, tepú, quilineja — which give unique and unrepeatable colors.",
+    "p3": "Every piece is finished with hand embroidery: flowers, birds, and Chilote motifs that make each garment a work of art.",
+    "badge1": "Virgin Wool",
+    "badge2": "Natural Dyes",
+    "badge3": "Hand Embroidered",
+    "badge4": "Artisan Felted"
+  },
+  "featured": {
+    "title": "Featured Pieces",
+    "viewAll": "View all"
+  },
+  "newsletter": {
+    "title": "Ayenantú Updates",
+    "sub": "New pieces, workshop stories and launches.",
+    "placeholder": "Your email address",
+    "button": "Subscribe"
+  },
+  "footer": {
+    "tagline": "Chilotean loom woolen workshop manufacture",
+    "address": "Ladrilleros #852, Quellón, Chiloé, Chile",
+    "phone": "+56 65 681144 · +56 9 99000630",
+    "email": "ayenantumariaruth@hotmail.com",
+    "rights": "All rights reserved."
+  },
+  "product": {
+    "addToCart": "Add to cart",
+    "unique": "Each piece is unique",
+    "care": "Care",
+    "careText": "Hand wash in warm water · Neutral soap · Do not spin · Natural drying",
+    "material": "Material",
+    "materialText": "100% virgin sheep wool · Natural herbal dyes"
+  },
+  "cart": {
+    "title": "Your cart",
+    "empty": "Your cart is empty.",
+    "subtotal": "Subtotal",
+    "checkout": "Buy with MercadoPago",
+    "remove": "Remove",
+    "continue": "Continue shopping"
+  },
+  "success": {
+    "title": "Thank you for your purchase!",
+    "sub": "You will receive a confirmation email shortly.",
+    "back": "Back to home"
+  },
+  "about": {
+    "title": "Our Story",
+    "p1": "Ayenantú — 'smiling sun' in Mapudungun — was born in Quellón, at the southern tip of Chiloé, from the hands of María Ruth.",
+    "p2": "It all started with a wooden loom inherited from her grandmother and a desire to keep alive the textile tradition of the archipelago. Over the years, María Ruth perfected the art of loom weaving, hand embroidery and artisan felting.",
+    "p3": "Today, every Ayenantú garment is made entirely by hand: spun, woven, dyed with native island plants and embroidered with Chilote motifs. No two pieces are the same.",
+    "p4": "When you buy Ayenantú, you support a local artisan and carry with you an authentic piece of Chiloé culture."
+  },
+  "care": {
+    "title": "Wool Care Guide",
+    "intro": "Virgin wool deserves special care to preserve its natural properties.",
+    "steps": [
+      { "title": "Hand wash", "desc": "Use warm water (max 30°C). Gently submerge without rubbing." },
+      { "title": "Neutral soap", "desc": "Use neutral soap or mild shampoo. Avoid enzyme detergents." },
+      { "title": "No spin", "desc": "Do not machine wash or spin dry. Gently press to remove water." },
+      { "title": "Natural drying", "desc": "Dry flat on a towel, away from direct sun and heat." },
+      { "title": "Low iron", "desc": "Iron on low temperature with a damp cloth between iron and garment." },
+      { "title": "Storage", "desc": "Store folded in a dry place. Avoid hangers for heavy wool garments." }
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send",
+    "info": "You can also reach us directly:"
+  }
+}

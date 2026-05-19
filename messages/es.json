@@ -1,0 +1,97 @@
+{
+  "nav": {
+    "collections": "Colecciones",
+    "about": "Nosotros",
+    "care": "Cuidado",
+    "contact": "Contacto",
+    "cart": "Carrito"
+  },
+  "hero": {
+    "tagline": "Taller de confección a telar chilote",
+    "sub": "Lana virgen · Tintes naturales · Bordado a mano",
+    "cta": "Ver Colección"
+  },
+  "brand": {
+    "line1": "Desde Quellón, Chiloé, cada prenda nace del telar tradicional chilote.",
+    "line2": "Lana virgen de oveja, teñida con hierbas del sur, bordada a mano por María Ruth.",
+    "line3": "Cada pieza es única — llevás un pedazo de la Isla Grande."
+  },
+  "collections": {
+    "title": "Colecciones"
+  },
+  "craft": {
+    "title": "El Tejido",
+    "p1": "El telar chilote es una técnica ancestral traída por los colonos españoles al archipiélago de Chiloé. En Ayenantú, mantenemos viva esa tradición usando telares de madera para tejer cada prenda desde cero.",
+    "p2": "La lana proviene directamente de ovejas criadas en la Isla Grande. La teñimos con plantas nativas — maqui, tepú, quilineja — que entregan colores únicos e irrepetibles.",
+    "p3": "Cada pieza se remata con bordado a mano: flores, aves y motivos chilotos que hacen de cada prenda una obra de arte.",
+    "badge1": "Lana Virgen",
+    "badge2": "Tintes Naturales",
+    "badge3": "Bordado a Mano",
+    "badge4": "Fieltro Artesanal"
+  },
+  "featured": {
+    "title": "Prendas Destacadas",
+    "viewAll": "Ver todas"
+  },
+  "newsletter": {
+    "title": "Novedades de Ayenantú",
+    "sub": "Nuevas prendas, historias del taller y lanzamientos.",
+    "placeholder": "Tu correo electrónico",
+    "button": "Suscribirse"
+  },
+  "footer": {
+    "tagline": "Taller de confección a telar chilote",
+    "address": "Ladrilleros #852, Quellón, Chiloé, Chile",
+    "phone": "+56 65 681144 · +56 9 99000630",
+    "email": "ayenantumariaruth@hotmail.com",
+    "rights": "Todos los derechos reservados."
+  },
+  "product": {
+    "addToCart": "Agregar al carrito",
+    "unique": "Cada pieza es única",
+    "care": "Cuidado",
+    "careText": "Lavar a mano en agua tibia · Jabón neutro · No centrifugar · Secar al natural",
+    "material": "Material",
+    "materialText": "100% lana virgen de oveja · Tintes naturales de hierbas"
+  },
+  "cart": {
+    "title": "Tu carrito",
+    "empty": "Tu carrito está vacío.",
+    "subtotal": "Subtotal",
+    "checkout": "Comprar con MercadoPago",
+    "remove": "Eliminar",
+    "continue": "Seguir comprando"
+  },
+  "success": {
+    "title": "¡Gracias por tu compra!",
+    "sub": "Recibirás un correo de confirmación pronto.",
+    "back": "Volver al inicio"
+  },
+  "about": {
+    "title": "Nuestra Historia",
+    "p1": "Ayenantú — «sol sonriente» en mapudungun — nació en Quellón, en el extremo sur de Chiloé, de las manos de María Ruth.",
+    "p2": "Todo comenzó con un telar de madera heredado de su abuela y el deseo de mantener viva la tradición textil del archipiélago. Con los años, María Ruth perfeccionó el arte del tejido a telar, el bordado a mano y el fieltro artesanal.",
+    "p3": "Hoy, cada prenda de Ayenantú es confeccionada íntegramente a mano: hilada, tejida, teñida con plantas nativas de la isla y bordada con motivos chilotos. No hay dos piezas iguales.",
+    "p4": "Cuando comprás Ayenantú, apoyas a una artesana local y llevás contigo un pedazo auténtico de la cultura de Chiloé."
+  },
+  "care": {
+    "title": "Cuidado del Tejido",
+    "intro": "La lana virgen merece un cuidado especial para conservar sus propiedades naturales.",
+    "steps": [
+      { "title": "Lavado a mano", "desc": "Usar agua tibia (máx. 30°C). Sumergir suavemente sin frotar." },
+      { "title": "Jabón neutro", "desc": "Usar jabón neutro o shampoo suave. Evitar detergentes con enzimas." },
+      { "title": "Sin centrífuga", "desc": "No meter en lavarropas ni centrifugar. Presionar suavemente para escurrir." },
+      { "title": "Secado natural", "desc": "Secar plano sobre una toalla, lejos del sol directo y calor." },
+      { "title": "Plancha baja", "desc": "Planchar a temperatura baja con paño húmedo interpuesto, si es necesario." },
+      { "title": "Almacenamiento", "desc": "Guardar doblada en lugar seco. Evitar perchas para prendas de lana pesadas." }
+    ]
+  },
+  "contact": {
+    "title": "Contacto",
+    "name": "Nombre",
+    "email": "Correo",
+    "message": "Mensaje",
+    "send": "Enviar",
+    "info": "También puedes contactarnos directamente:"
+  }
+}
