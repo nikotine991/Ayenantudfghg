@@ -10,7 +10,7 @@ export default function Footer() {
     <footer className="bg-green-dark text-cream mt-16">
       <div className="max-w-6xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
-          <Image src="/logo.png" alt="Ayenantú" width={140} height={48} className="h-12 w-auto mb-3" />
+          <Image src="/logo.jpeg" alt="Ayenantú" width={140} height={48} className="h-12 w-auto mb-3" />
           <p className="text-sm text-cream/80">{t('tagline')}</p>
         </div>
 
