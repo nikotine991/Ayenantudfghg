@@ -16,330 +16,239 @@ export interface Product {
 const BASE = '/images/products';
 
 export const products: Product[] = [
-  // ── ABRIGOS ──────────────────────────────────────────────────────────
+  // ── ABRIGOS Y CHAQUETAS ───────────────────────────────────────────────
   {
-    id: 'abrigo-rojo',
-    slug: 'abrigo-rojo',
+    id: 'chaqueta-crema-crochet',
+    slug: 'chaqueta-crema-crochet',
     collection: 'abrigos',
-    name_es: 'Abrigo Rojo Tejido a Telar',
-    name_en: 'Red Handwoven Coat',
-    description_es: 'Abrigo largo tejido a telar chilote en lana virgen de color rojo intenso. Cuello y ribete inferior en tela negra. Cierre de botones artesanales. Una prenda de colección.',
-    description_en: 'Long coat woven on a Chilote loom in deep red virgin wool. Black fabric collar and hem trim. Handcrafted button closure. A collector\'s piece.',
-    price_clp: 185000,
-    images: [
-      `${BASE}/IMG_20220913_191400.jpg`,
-      `${BASE}/IMG_20220913_191631.jpg`
-    ],
-    featured: true,
-    tags_es: ['lana virgen', 'telar chilote', 'abrigo largo', 'colección'],
-    tags_en: ['virgin wool', 'Chilote loom', 'long coat', 'collection']
-  },
-  {
-    id: 'chaqueta-turquesa',
-    slug: 'chaqueta-turquesa',
-    collection: 'abrigos',
-    name_es: 'Chaqueta Bicolor Turquesa',
-    name_en: 'Turquoise Two-tone Jacket',
-    description_es: 'Chaqueta tejida a telar en dos tonos de azul turquesa. Diseño en bloques de color. Botones forrados artesanales. Tejido resistente al agua.',
-    description_en: 'Loom-woven jacket in two shades of turquoise blue. Color block design. Handmade covered buttons. Water-resistant weave.',
-    price_clp: 98000,
-    images: [
-      `${BASE}/IMG_20220912_130029.jpg`,
-      `${BASE}/IMG_20220912_130048.jpg`
-    ],
-    featured: true,
-    tags_es: ['lana virgen', 'telar chilote', 'bicolor', 'turquesa'],
-    tags_en: ['virgin wool', 'Chilote loom', 'two-tone', 'turquoise']
-  },
-  {
-    id: 'chaqueta-tierra',
-    slug: 'chaqueta-tierra',
-    collection: 'abrigos',
-    name_es: 'Chaqueta Tierra con Flecos',
-    name_en: 'Earth Tone Fringe Jacket',
-    description_es: 'Chaqueta en tonos tierra tejida a telar con flecos decorativos en cuello y frente. Broche artesanal floral. Lana virgen teñida con hierbas nativas.',
-    description_en: 'Earth tone loom-woven jacket with decorative fringe on collar and front. Floral handmade brooch. Virgin wool dyed with native herbs.',
+    name_es: 'Chaqueta Crema con Cuello Crochet',
+    name_en: 'Cream Jacket with Crochet Collar',
+    description_es: 'Chaqueta tejida a telar en lana virgen crema natural. Cuello tipo Peter Pan y puños con encaje a crochet artesanal. Ruedo con flecos. Cierre frontal. Pieza elegante y cálida.',
+    description_en: 'Loom-woven jacket in natural cream virgin wool. Peter Pan collar and cuffs with handmade crochet lace. Fringed hem. Front closure. Elegant and warm piece.',
     price_clp: 95000,
     images: [
-      `${BASE}/IMG_20220912_124232.jpg`,
-      `${BASE}/IMG_20220912_124327.jpg`
+      `${BASE}/chaqueta-crema-crochet-1.jpg`,
+      `${BASE}/chaqueta-crema-crochet-2.jpg`
     ],
     featured: false,
-    tags_es: ['lana virgen', 'tintes naturales', 'flecos', 'tierra'],
-    tags_en: ['virgin wool', 'natural dyes', 'fringe', 'earth tones']
+    tags_es: ['lana virgen', 'telar chilote', 'crochet', 'crema', 'flecos'],
+    tags_en: ['virgin wool', 'Chilote loom', 'crochet', 'cream', 'fringe']
   },
   {
-    id: 'chaqueta-negra-crema',
-    slug: 'chaqueta-negra-crema',
+    id: 'abrigo-cafe-oversized',
+    slug: 'abrigo-cafe-oversized',
     collection: 'abrigos',
-    name_es: 'Chaqueta Negra con Mangas Crema',
-    name_en: 'Black & Cream Fringe Jacket',
-    description_es: 'Chaqueta de cuerpo negro con mangas en lana crema. Flecos en el ruedo. Cierre de botones oscuros. Diseño moderno con técnica tradicional.',
-    description_en: 'Black-body jacket with cream wool sleeves. Fringe at the hem. Dark button closure. Modern design with traditional technique.',
-    price_clp: 92000,
+    name_es: 'Abrigo Café Oversized',
+    name_en: 'Oversized Brown Wool Coat',
+    description_es: 'Abrigo oversized tejido a telar en lana café oscura. Tejido grueso y muy cálido, ideal para el invierno austral. Silueta amplia y envolvente. Cierre con botones artesanales.',
+    description_en: 'Oversized loom-woven dark brown wool coat. Thick and very warm weave, perfect for the southern winter. Wide, enveloping silhouette. Handcrafted button closure.',
+    price_clp: 150000,
     images: [
-      `${BASE}/IMG_20220912_130347.jpg`,
-      `${BASE}/IMG_20220912_130220.jpg`
+      `${BASE}/abrigo-cafe-oversized-1.jpg`,
+      `${BASE}/abrigo-cafe-oversized-2.jpg`
     ],
     featured: false,
-    tags_es: ['lana virgen', 'bicolor', 'flecos', 'moderno'],
-    tags_en: ['virgin wool', 'two-tone', 'fringe', 'modern']
+    tags_es: ['lana virgen', 'telar chilote', 'café', 'oversized', 'invierno'],
+    tags_en: ['virgin wool', 'Chilote loom', 'brown', 'oversized', 'winter']
   },
-
-  // ── TRAJES ───────────────────────────────────────────────────────────
   {
-    id: 'conjunto-negro-gris',
-    slug: 'conjunto-negro-gris',
-    collection: 'trajes',
-    name_es: 'Conjunto Negro y Gris',
-    name_en: 'Black & Grey Wool Set',
-    description_es: 'Conjunto de chaleco negro con falda en lana gris melange, ambos tejidos a telar. Cuello tipo tortuga. Acabado elegante con ribete a crochet.',
-    description_en: 'Black turtleneck vest and grey melange skirt set, both loom-woven. Turtleneck style. Elegant finish with crochet trim.',
-    price_clp: 140000,
+    id: 'abrigo-escoces-largo',
+    slug: 'abrigo-escoces-largo',
+    collection: 'abrigos',
+    name_es: 'Abrigo Largo Estilo Escocés',
+    name_en: 'Long Tartan-Style Coat',
+    description_es: 'Abrigo largo tejido a telar en patrón tipo escocés en tonos tierra, crema y café. Bolsillo parche en el frente. Botones artesanales. Combina el tejido a telar con lana natural sin teñir. Prenda de colección.',
+    description_en: 'Long loom-woven coat in tartan-style pattern, earth tones, cream and brown. Front patch pocket. Handcrafted buttons. Combines loom weaving with undyed natural wool. Collector\'s piece.',
+    price_clp: 175000,
     images: [
-      `${BASE}/IMG_20220912_123846.jpg`
+      `${BASE}/abrigo-escoces-largo-1.jpg`,
+      `${BASE}/abrigo-escoces-largo-2.jpg`
     ],
     featured: true,
-    tags_es: ['conjunto', 'lana virgen', 'telar chilote', 'elegante'],
-    tags_en: ['set', 'virgin wool', 'Chilote loom', 'elegant']
+    tags_es: ['lana virgen', 'telar chilote', 'abrigo largo', 'escocés', 'tierra', 'colección'],
+    tags_en: ['virgin wool', 'Chilote loom', 'long coat', 'tartan', 'earth tones', 'collection']
   },
   {
-    id: 'blazer-dorado',
-    slug: 'blazer-dorado',
-    collection: 'trajes',
-    name_es: 'Blazer Dorado Multicolor',
-    name_en: 'Golden Multicolor Blazer',
-    description_es: 'Blazer tejido a telar en tonos dorados, verdes y ocres. Lana virgen teñida con hierbas nativas de Chiloé. Pieza única de colección.',
-    description_en: 'Loom-woven blazer in golden, green and ochre tones. Virgin wool dyed with native Chiloé herbs. Unique collector\'s piece.',
-    price_clp: 110000,
+    id: 'chaqueta-azul-teal',
+    slug: 'chaqueta-azul-teal',
+    collection: 'abrigos',
+    name_es: 'Chaqueta Azul Teal con Bolsillos Denim',
+    name_en: 'Teal Blue Jacket with Denim Pockets',
+    description_es: 'Chaqueta tejida a telar en azul teal intenso. Bolsillos aplicados en tela denim, mezcla de técnicas artesanales. Flecos en el ruedo. Cierre con broche artesanal. Diseño contemporáneo.',
+    description_en: 'Loom-woven jacket in deep teal blue. Applied denim fabric pockets — a blend of artisan techniques. Fringed hem. Handcrafted brooch closure. Contemporary design.',
+    price_clp: 95000,
     images: [
-      `${BASE}/IMG_20220912_130503.jpg`
+      `${BASE}/chaqueta-azul-teal.jpg`
     ],
     featured: false,
-    tags_es: ['blazer', 'lana virgen', 'tintes naturales', 'dorado'],
-    tags_en: ['blazer', 'virgin wool', 'natural dyes', 'golden']
+    tags_es: ['lana virgen', 'telar chilote', 'teal', 'azul', 'denim', 'flecos'],
+    tags_en: ['virgin wool', 'Chilote loom', 'teal', 'blue', 'denim', 'fringe']
+  },
+  {
+    id: 'abrigo-rojo-cuero',
+    slug: 'abrigo-rojo-cuero',
+    collection: 'abrigos',
+    name_es: 'Abrigo Rojo con Bolsillos de Cuero',
+    name_en: 'Red Coat with Leather Pockets',
+    description_es: 'Abrigo tejido a telar en lana roja intensa. Bolsillos aplicados en cuero rojo, cierre de botones tipo duffle. Pieza de fuerte impacto visual. Lana virgen teñida con tintes fuertes.',
+    description_en: 'Loom-woven coat in deep red wool. Applied red leather pockets. Duffle-style toggle closure. Visually striking piece. Virgin wool dyed with vibrant dyes.',
+    price_clp: 165000,
+    images: [
+      `${BASE}/abrigo-rojo-cuero.jpg`
+    ],
+    featured: true,
+    tags_es: ['lana virgen', 'telar chilote', 'rojo', 'cuero', 'abrigo'],
+    tags_en: ['virgin wool', 'Chilote loom', 'red', 'leather', 'coat']
+  },
+  {
+    id: 'chaqueta-mostaza-rayada',
+    slug: 'chaqueta-mostaza-rayada',
+    collection: 'abrigos',
+    name_es: 'Chaqueta Mostaza con Canesú Rayado',
+    name_en: 'Mustard Jacket with Striped Yoke',
+    description_es: 'Chaqueta tejida a telar en lana mostaza dorada. Canesú y bolsillos en tejido a rayas café, crema y negro. Botones artesanales forrados. Detalle de cierre trasero. Pieza con gran trabajo artesanal.',
+    description_en: 'Loom-woven jacket in golden mustard wool. Yoke and pockets in brown, cream and black striped weave. Covered handmade buttons. Back closure detail. Exceptional artisan craftsmanship.',
+    price_clp: 105000,
+    images: [
+      `${BASE}/chaqueta-mostaza-rayada-1.jpg`,
+      `${BASE}/chaqueta-mostaza-rayada-2.jpg`
+    ],
+    featured: true,
+    tags_es: ['lana virgen', 'telar chilote', 'mostaza', 'rayas', 'artesanal'],
+    tags_en: ['virgin wool', 'Chilote loom', 'mustard', 'striped', 'artisan']
+  },
+  {
+    id: 'chaqueta-turquesa-volados',
+    slug: 'chaqueta-turquesa-volados',
+    collection: 'abrigos',
+    name_es: 'Chaqueta Turquesa con Volados',
+    name_en: 'Turquoise Jacket with Ruffle Front',
+    description_es: 'Chaqueta tejida a telar en azul turquesa vibrante. Volados en lana verde lima recorren el frente. Ribete inferior a rayas turquesa y lima. Sin botones, silueta abierta. Diseño avant-garde único.',
+    description_en: 'Loom-woven jacket in vibrant turquoise blue. Lime green wool ruffles run down the front. Striped turquoise and lime lower trim. Buttonless open silhouette. Unique avant-garde design.',
+    price_clp: 98000,
+    images: [
+      `${BASE}/chaqueta-turquesa-volados.jpg`
+    ],
+    featured: false,
+    tags_es: ['lana virgen', 'telar chilote', 'turquesa', 'volados', 'avant-garde'],
+    tags_en: ['virgin wool', 'Chilote loom', 'turquoise', 'ruffle', 'avant-garde']
   },
 
-  // ── PONCHOS (Tops & Knitwear) ────────────────────────────────────────
+  // ── PONCHOS Y CHALES ─────────────────────────────────────────────────
   {
-    id: 'vestido-blanco-capelina',
-    slug: 'vestido-blanco-capelina',
+    id: 'chal-tierra-pompones',
+    slug: 'chal-tierra-pompones',
     collection: 'ponchos',
-    name_es: 'Vestido Blanco con Capelina Multicolor',
-    name_en: 'White Dress with Colourful Capelet',
-    description_es: 'Vestido tejido en lana blanca con encaje. Capelina artesanal en colores vivos tejida a crochet. Pieza artística y única.',
-    description_en: 'White lace-knit wool dress with a handmade colourful crochet capelet. Artistic, one-of-a-kind piece.',
-    price_clp: 125000,
-    images: [
-      `${BASE}/IMG_20220912_132145.jpg`
-    ],
-    featured: false,
-    tags_es: ['vestido', 'crochet', 'lana virgen', 'artístico'],
-    tags_en: ['dress', 'crochet', 'virgin wool', 'artistic']
-  },
-  {
-    id: 'top-naranja-verde',
-    slug: 'top-naranja-verde',
-    collection: 'ponchos',
-    name_es: 'Top Naranja y Verde',
-    name_en: 'Orange & Green Sleeveless Top',
-    description_es: 'Top sin mangas tejido en dos colores: naranja vibrante y verde oliva. Bordado a crochet en escote y ruedo. Lana virgen con tintes naturales.',
-    description_en: 'Sleeveless two-colour top in vibrant orange and olive green. Crochet embroidery on neckline and hem. Virgin wool with natural dyes.',
-    price_clp: 58000,
-    images: [
-      `${BASE}/IMG_20220912_130610.jpg`
-    ],
-    featured: false,
-    tags_es: ['top', 'bicolor', 'bordado a crochet', 'tintes naturales'],
-    tags_en: ['top', 'two-tone', 'crochet embroidery', 'natural dyes']
-  },
-  {
-    id: 'cardigan-crema',
-    slug: 'cardigan-crema',
-    collection: 'ponchos',
-    name_es: 'Cárdigan Crema Natural',
-    name_en: 'Natural Cream Cardigan',
-    description_es: 'Cárdigan tejido en lana virgen en su color natural. Cierre con botones de madera. Bolsillos laterales. Suave y cálido.',
-    description_en: 'Cardigan knitted in natural virgin wool colour. Wooden button closure. Side pockets. Soft and warm.',
+    name_es: 'Chal Tierra con Pompones',
+    name_en: 'Earth Tone Shawl with Pom-Poms',
+    description_es: 'Chal tejido a telar en lana tonos tierra con borde decorativo de pompones en lana naranja y rosa. Broche artesanal de madera. Tejido resistente al agua. Ideal para cubrir hombros.',
+    description_en: 'Loom-woven earth-tone wool shawl with decorative border of orange and pink wool pom-poms. Wooden handmade brooch. Water-resistant weave. Perfect as a shoulder wrap.',
     price_clp: 72000,
     images: [
-      `${BASE}/IMG_20220912_131338.jpg`
+      `${BASE}/chal-tierra-pompones.jpg`
     ],
     featured: false,
-    tags_es: ['cárdigan', 'lana natural', 'madera', 'cálido'],
-    tags_en: ['cardigan', 'natural wool', 'wooden buttons', 'warm']
+    tags_es: ['lana virgen', 'telar chilote', 'tierra', 'pompones', 'chal'],
+    tags_en: ['virgin wool', 'Chilote loom', 'earth tones', 'pom-poms', 'shawl']
   },
-
-  // ── ACCESORIOS (Felted hats, berets, capelets, scarves) ───────────────
   {
-    id: 'set-boina-azul-fieltro',
-    slug: 'set-boina-azul-fieltro',
-    collection: 'accesorios',
-    name_es: 'Set Boina + Echarpe Azul Cielo (Fieltro)',
-    name_en: 'Sky Blue Felted Beret + Scarf Set',
-    description_es: 'Set de boina y echarpe en lana fieltrada azul cielo con motivos florales. Técnica de fieltro húmedo artesanal. Conjunto único.',
-    description_en: 'Felted beret and scarf set in sky blue wool with floral motifs. Traditional wet felting technique. Unique set.',
-    price_clp: 48000,
+    id: 'poncho-multicolor-turquesa',
+    slug: 'poncho-multicolor-turquesa',
+    collection: 'ponchos',
+    name_es: 'Poncho Multicolor con Ribete Turquesa',
+    name_en: 'Multicolor Poncho with Turquoise Trim',
+    description_es: 'Poncho tejido a telar en lana multicolor con mezcla de verdes, amarillos y naranjas. Ribete y bordado lateral en turquesa. Lana virgen teñida con tintes naturales. Pieza única.',
+    description_en: 'Loom-woven multicolor wool poncho blending greens, yellows and oranges. Turquoise border and side embroidery. Virgin wool with natural dyes. One-of-a-kind piece.',
+    price_clp: 85000,
     images: [
-      `${BASE}/IMG_20220919_153138.jpg`,
-      `${BASE}/IMG_20220919_153237.jpg`
+      `${BASE}/poncho-multicolor-turquesa.jpg`
+    ],
+    featured: false,
+    tags_es: ['lana virgen', 'tintes naturales', 'poncho', 'multicolor', 'turquesa'],
+    tags_en: ['virgin wool', 'natural dyes', 'poncho', 'multicolor', 'turquoise']
+  },
+  {
+    id: 'poncho-mostaza-bordado',
+    slug: 'poncho-mostaza-bordado',
+    collection: 'ponchos',
+    name_es: 'Poncho Mostaza con Bordado',
+    name_en: 'Mustard Poncho with Embroidery',
+    description_es: 'Poncho tejido a telar en lana mostaza vibrante. Bordado decorativo en el centro y ribete multicolor. Cierre con broche artesanal. Diseño que equilibra color sólido con detalles artísticos.',
+    description_en: 'Loom-woven poncho in vibrant mustard wool. Decorative centre embroidery and multicolor trim. Artisan brooch closure. Design balancing solid colour with artistic details.',
+    price_clp: 82000,
+    images: [
+      `${BASE}/poncho-mostaza-bordado.jpg`
+    ],
+    featured: false,
+    tags_es: ['lana virgen', 'telar chilote', 'mostaza', 'bordado', 'poncho'],
+    tags_en: ['virgin wool', 'Chilote loom', 'mustard', 'embroidery', 'poncho']
+  },
+  {
+    id: 'poncho-verde-strelitzia',
+    slug: 'poncho-verde-strelitzia',
+    collection: 'ponchos',
+    name_es: 'Poncho Verde con Strelitzia',
+    name_en: 'Green Poncho with Strelitzia',
+    description_es: 'Poncho tejido a telar en lana verde oliva. Bordado artístico de flor de strelitzia en naranja y azul. Flecos en los bordes. Pieza única con alto valor artístico.',
+    description_en: 'Loom-woven olive green wool poncho. Artistic embroidery of a strelitzia bird-of-paradise flower in orange and blue. Fringed edges. Unique piece with high artistic value.',
+    price_clp: 90000,
+    images: [
+      `${BASE}/poncho-verde-strelitzia.jpg`
     ],
     featured: true,
-    tags_es: ['fieltro', 'boina', 'set', 'floral'],
-    tags_en: ['felted', 'beret', 'set', 'floral']
+    tags_es: ['lana virgen', 'tintes naturales', 'verde', 'bordado', 'strelitzia', 'artístico'],
+    tags_en: ['virgin wool', 'natural dyes', 'green', 'embroidery', 'strelitzia', 'artistic']
   },
   {
-    id: 'set-boina-roja-capelina',
-    slug: 'set-boina-roja-capelina',
-    collection: 'accesorios',
-    name_es: 'Set Boina + Capelina Roja (Fieltro)',
-    name_en: 'Red Felted Beret + Capelet Set',
-    description_es: 'Set de boina y capelina en lana fieltrada roja coral con detalles en seda y lentejuelas. Pieza festiva y elegante.',
-    description_en: 'Red coral felted beret and capelet set with silk and sequin details. Festive and elegant piece.',
-    price_clp: 52000,
+    id: 'chal-teal-bolsillos',
+    slug: 'chal-teal-bolsillos',
+    collection: 'ponchos',
+    name_es: 'Chal Teal con Bolsillos',
+    name_en: 'Teal Shawl with Pockets',
+    description_es: 'Chal grande tejido a telar en lana azul teal intenso. Bolsillos integrados en ambos lados. Flecos en el ruedo. Puede usarse como poncho o chal envolvente. Muy versátil.',
+    description_en: 'Large loom-woven shawl in deep teal blue wool. Integrated pockets on both sides. Fringed hem. Can be worn as a poncho or wrap shawl. Very versatile.',
+    price_clp: 78000,
     images: [
-      `${BASE}/IMG_20220919_153717.jpg`,
-      `${BASE}/IMG_20220919_153731.jpg`
+      `${BASE}/chal-teal-bolsillos.jpg`
     ],
     featured: false,
-    tags_es: ['fieltro', 'boina', 'capelina', 'rojo'],
-    tags_en: ['felted', 'beret', 'capelet', 'red']
+    tags_es: ['lana virgen', 'telar chilote', 'teal', 'azul', 'bolsillos', 'chal'],
+    tags_en: ['virgin wool', 'Chilote loom', 'teal', 'blue', 'pockets', 'shawl']
   },
   {
-    id: 'set-boina-blanca-capelina',
-    slug: 'set-boina-blanca-capelina',
-    collection: 'accesorios',
-    name_es: 'Set Boina + Capelina Blanca (Fieltro)',
-    name_en: 'White Felted Beret + Capelet Set',
-    description_es: 'Set de boina y capelina en lana fieltrada blanca. Acabado suave con detalles satinados. Elegante y versátil.',
-    description_en: 'White felted beret and capelet set. Smooth finish with satin details. Elegant and versatile.',
-    price_clp: 48000,
+    id: 'chal-crema-macrame',
+    slug: 'chal-crema-macrame',
+    collection: 'ponchos',
+    name_es: 'Chal Crema con Flecos Macramé',
+    name_en: 'Cream Shawl with Macramé Fringe',
+    description_es: 'Chal tejido a telar en lana virgen crema sin teñir. Borde inferior con trabajo artesanal de macramé en lana gruesa. Mezcla dos técnicas textiles en una sola pieza de autor.',
+    description_en: 'Loom-woven shawl in undyed natural cream virgin wool. Lower edge with handmade macramé work in thick wool. Blends two textile techniques in one unique artisan piece.',
+    price_clp: 75000,
     images: [
-      `${BASE}/IMG_20220919_153954.jpg`,
-      `${BASE}/IMG_20220919_154011.jpg`
+      `${BASE}/chal-crema-macrame.jpg`
     ],
     featured: false,
-    tags_es: ['fieltro', 'boina', 'capelina', 'blanco'],
-    tags_en: ['felted', 'beret', 'capelet', 'white']
+    tags_es: ['lana virgen', 'lana natural', 'macramé', 'crema', 'chal', 'artesanal'],
+    tags_en: ['virgin wool', 'natural wool', 'macramé', 'cream', 'shawl', 'artisan']
   },
+
+  // ── TRAJES Y VESTIDOS ─────────────────────────────────────────────────
   {
-    id: 'set-boina-crema-echarpe',
-    slug: 'set-boina-crema-echarpe',
-    collection: 'accesorios',
-    name_es: 'Set Boina + Echarpe Crema (Fieltro)',
-    name_en: 'Cream Felted Beret + Scarf Set',
-    description_es: 'Set de boina y echarpe en lana fieltrada crema con motivos naturales en ocre y café. Lana virgen sin teñir.',
-    description_en: 'Cream felted beret and scarf set with natural ochre and brown motifs. Undyed virgin wool.',
-    price_clp: 46000,
+    id: 'vestido-mostaza-cuero',
+    slug: 'vestido-mostaza-cuero',
+    collection: 'trajes',
+    name_es: 'Vestido Sin Mangas Mostaza con Bolsillos de Cuero',
+    name_en: 'Sleeveless Mustard Dress with Leather Pockets',
+    description_es: 'Vestido sin mangas tejido a telar en lana mostaza-oliva. Bolsillos aplicados en cuero ecológico. Silueta recta y versátil. Se lleva sobre blusa o polera. Elegante y práctico.',
+    description_en: 'Sleeveless loom-woven dress in mustard-olive wool. Applied faux leather pockets. Straight, versatile silhouette. Worn over a blouse or T-shirt. Elegant and practical.',
+    price_clp: 120000,
     images: [
-      `${BASE}/IMG_20220919_154857.jpg`,
-      `${BASE}/IMG_20220919_154929.jpg`
+      `${BASE}/vestido-mostaza-cuero-1.jpg`,
+      `${BASE}/vestido-mostaza-cuero-2.jpg`
     ],
     featured: false,
-    tags_es: ['fieltro', 'boina', 'lana natural', 'crema'],
-    tags_en: ['felted', 'beret', 'natural wool', 'cream']
-  },
-  {
-    id: 'set-boina-negra-echarpe',
-    slug: 'set-boina-negra-echarpe',
-    collection: 'accesorios',
-    name_es: 'Set Boina Negra + Echarpe Crema (Fieltro)',
-    name_en: 'Black Beret + Cream Scarf Felted Set',
-    description_es: 'Boina negra de fieltro con echarpe crema. Combinación clásica y elegante. Técnica de fieltro húmedo artesanal.',
-    description_en: 'Black felted beret with cream scarf. Classic and elegant combination. Handmade wet felting technique.',
-    price_clp: 44000,
-    images: [
-      `${BASE}/IMG_20220919_155023.jpg`,
-      `${BASE}/IMG_20220919_155014.jpg`
-    ],
-    featured: false,
-    tags_es: ['fieltro', 'boina', 'negro', 'clásico'],
-    tags_en: ['felted', 'beret', 'black', 'classic']
-  },
-  {
-    id: 'set-boina-fucsia-echarpe',
-    slug: 'set-boina-fucsia-echarpe',
-    collection: 'accesorios',
-    name_es: 'Set Boina Fucsia + Echarpe Multicolor (Fieltro)',
-    name_en: 'Fuchsia Beret + Multicolor Scarf Felted Set',
-    description_es: 'Boina fucsia de fieltro con echarpe en lana blanca y motivos multicolor tipo pompones. Alegre y original.',
-    description_en: 'Fuchsia felted beret with white wool scarf featuring multicolor pom-pom motifs. Cheerful and original.',
-    price_clp: 50000,
-    images: [
-      `${BASE}/IMG_20220919_155222.jpg`,
-      `${BASE}/IMG_20220919_155251.jpg`
-    ],
-    featured: false,
-    tags_es: ['fieltro', 'boina', 'fucsia', 'multicolor'],
-    tags_en: ['felted', 'beret', 'fuchsia', 'multicolor']
-  },
-  {
-    id: 'set-boina-azul-cowl',
-    slug: 'set-boina-azul-cowl',
-    collection: 'accesorios',
-    name_es: 'Set Boina + Cuello Azul (Fieltro)',
-    name_en: 'Blue Felted Beret + Cowl Set',
-    description_es: 'Set de boina y cuello/bufanda en lana fieltrada azul con detalles en fucsia. Técnica de fieltro húmedo con incrustaciones.',
-    description_en: 'Blue felted beret and cowl/scarf set with fuchsia inlay details. Wet felting technique with inclusions.',
-    price_clp: 46000,
-    images: [
-      `${BASE}/IMG_20220825_160827.jpg`,
-      `${BASE}/IMG_20220825_161234.jpg`
-    ],
-    featured: false,
-    tags_es: ['fieltro', 'boina', 'azul', 'cuello'],
-    tags_en: ['felted', 'beret', 'blue', 'cowl']
-  },
-  {
-    id: 'boina-navy',
-    slug: 'boina-navy',
-    collection: 'accesorios',
-    name_es: 'Boina Azul Marino (Fieltro)',
-    name_en: 'Navy Blue Felted Beret',
-    description_es: 'Boina artesanal en lana fieltrada azul marino. Clásica y sofisticada. Técnica de fieltro húmedo.',
-    description_en: 'Handcrafted navy blue felted beret. Classic and sophisticated. Wet felting technique.',
-    price_clp: 26000,
-    images: [
-      `${BASE}/IMG_20220825_161320.jpg`,
-      `${BASE}/IMG_20220825_161352.jpg`
-    ],
-    featured: false,
-    tags_es: ['fieltro', 'boina', 'navy', 'clásico'],
-    tags_en: ['felted', 'beret', 'navy', 'classic']
-  },
-  {
-    id: 'set-boina-fucsia-cuello-blanco',
-    slug: 'set-boina-fucsia-cuello-blanco',
-    collection: 'accesorios',
-    name_es: 'Set Boina Fucsia + Cuello Blanco',
-    name_en: 'Fuchsia Beret + White Neck Warmer Set',
-    description_es: 'Boina fucsia de fieltro con cuello en lana blanca tejida. Dos técnicas combinadas: fieltro y tejido a telar.',
-    description_en: 'Fuchsia felted beret with white knitted neck warmer. Two combined techniques: felting and loom weaving.',
-    price_clp: 44000,
-    images: [
-      `${BASE}/IMG_20220825_161928.jpg`,
-      `${BASE}/IMG_20220825_161940.jpg`,
-      `${BASE}/IMG_20220825_161951.jpg`
-    ],
-    featured: false,
-    tags_es: ['fieltro', 'boina', 'fucsia', 'cuello'],
-    tags_en: ['felted', 'beret', 'fuchsia', 'neck warmer']
-  },
-  {
-    id: 'set-boina-blanca-cuello',
-    slug: 'set-boina-blanca-cuello',
-    collection: 'accesorios',
-    name_es: 'Set Boina Blanca + Cuello Tejido',
-    name_en: 'White Beret + Knitted Neck Warmer',
-    description_es: 'Boina blanca de fieltro con cuello tejido a telar en lana blanca. Set invernal elegante y cálido.',
-    description_en: 'White felted beret with loom-knitted white neck warmer. Elegant and warm winter set.',
-    price_clp: 44000,
-    images: [
-      `${BASE}/IMG_20220825_161824.jpg`
-    ],
-    featured: false,
-    tags_es: ['fieltro', 'boina', 'blanco', 'cuello'],
-    tags_en: ['felted', 'beret', 'white', 'neck warmer']
+    tags_es: ['lana virgen', 'telar chilote', 'vestido', 'mostaza', 'cuero', 'sin mangas'],
+    tags_en: ['virgin wool', 'Chilote loom', 'dress', 'mustard', 'leather', 'sleeveless']
   }
 ];
 
