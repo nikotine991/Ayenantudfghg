@@ -1,12 +1,6 @@
 import { MercadoPagoConfig, Preference } from 'mercadopago';
 import { products } from '@/data/products';
 
-// Fail loudly if credentials are missing — no silent fallback to test tokens
-const token = process.env.MP_ACCESS_TOKEN;
-if (!token) throw new Error('MP_ACCESS_TOKEN environment variable is not set');
-
-const client = new MercadoPagoConfig({ accessToken: token });
-
 export interface CheckoutItem {
   id: string;
   title: string;
@@ -14,8 +8,14 @@ export interface CheckoutItem {
   // unit_price intentionally omitted — server looks it up from products.ts
 }
 
+function getClient(): MercadoPagoConfig {
+  const token = process.env.MP_ACCESS_TOKEN;
+  if (!token) throw new Error('MP_ACCESS_TOKEN environment variable is not set');
+  return new MercadoPagoConfig({ accessToken: token });
+}
+
 export async function createPreference(items: CheckoutItem[], locale: string) {
-  const preference = new Preference(client);
+  const preference = new Preference(getClient());
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL ?? 'http://localhost:3000';
 
   // Resolve authoritative prices server-side — never trust client-sent prices
