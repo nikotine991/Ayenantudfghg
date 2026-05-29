@@ -27,7 +27,13 @@ export function CartProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     const saved = localStorage.getItem('ayenantu-cart');
-    if (saved) setItems(JSON.parse(saved));
+    if (saved) {
+      try {
+        setItems(JSON.parse(saved));
+      } catch {
+        localStorage.removeItem('ayenantu-cart');
+      }
+    }
   }, []);
 
   useEffect(() => {
