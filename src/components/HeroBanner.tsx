@@ -7,7 +7,7 @@ export default function HeroBanner() {
   return (
     <section
       className="relative min-h-[92vh] flex items-center justify-center bg-green-dark overflow-hidden"
-      style={{ backgroundImage: 'url(/images/hero.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+      style={{ backgroundImage: 'url(/images/hero.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}
     >
       <div className="absolute inset-0 bg-black/30" />
       <div className="relative z-10 text-center text-cream px-6 max-w-2xl mx-auto">
