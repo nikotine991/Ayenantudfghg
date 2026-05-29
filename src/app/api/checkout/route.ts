@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { createPreference } from '@/lib/mercadopago';
+import { products } from '@/data/products';
 
 const VALID_LOCALES = ['es', 'en'];
 
@@ -60,6 +61,14 @@ export async function POST(req: NextRequest) {
       quantity > 99
     ) {
       return NextResponse.json({ error: 'Invalid item quantity' }, { status: 400 });
+    }
+  }
+
+  // Reject if any item is out of stock
+  for (const item of items as Array<{ id: string; title: string; quantity: number }>) {
+    const product = products.find(p => p.id === item.id);
+    if (product && !product.inStock) {
+      return NextResponse.json({ error: `Product "${item.title}" is out of stock` }, { status: 422 });
     }
   }
 

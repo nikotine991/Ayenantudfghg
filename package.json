@@ -11,13 +11,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "imagetracerjs": "^1.2.6",
     "mercadopago": "^2.12.0",
     "next": "^15.5.18",
     "next-intl": "^4.11.2",
     "potrace": "^2.1.8",
     "react": "^19.2.6",
-    "react-dom": "^19.2.6"
+    "react-dom": "^19.2.6",
+    "resend": "^6.12.4"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.3.0",

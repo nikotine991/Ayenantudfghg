@@ -22,6 +22,13 @@ export default function ProductCard({ product }: { product: Product }) {
           fill
           className="object-cover group-hover:scale-105 transition-transform duration-500"
         />
+        {!product.inStock && (
+          <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
+            <span className="text-cream text-sm font-medium tracking-widest uppercase">
+              {locale === 'es' ? 'Agotado' : 'Sold Out'}
+            </span>
+          </div>
+        )}
       </Link>
       <div className="p-4">
         <Link href={`/products/${product.slug}`}>
@@ -30,12 +37,21 @@ export default function ProductCard({ product }: { product: Product }) {
           </h3>
         </Link>
         <p className="text-green-dark font-semibold mb-3">{formatPrice(product.price_clp)}</p>
-        <button
-          onClick={() => addItem({ id: product.id, slug: product.slug, name, price_clp: product.price_clp, image: product.images[0] })}
-          className="w-full bg-green-dark text-cream py-2 text-sm font-medium tracking-wide uppercase hover:bg-green-olive transition-colors"
-        >
-          {t('addToCart')}
-        </button>
+        {product.inStock ? (
+          <button
+            onClick={() => addItem({ id: product.id, slug: product.slug, name, price_clp: product.price_clp, image: product.images[0] })}
+            className="w-full bg-green-dark text-cream py-2 text-sm font-medium tracking-wide uppercase hover:bg-green-olive transition-colors"
+          >
+            {t('addToCart')}
+          </button>
+        ) : (
+          <button
+            disabled
+            className="w-full bg-charcoal/20 text-charcoal/40 py-2 text-sm font-medium tracking-wide uppercase cursor-not-allowed"
+          >
+            {locale === 'es' ? 'Agotado' : 'Sold Out'}
+          </button>
+        )}
       </div>
     </div>
   );

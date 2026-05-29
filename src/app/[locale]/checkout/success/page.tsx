@@ -7,9 +7,25 @@ import { useCart } from '@/components/CartProvider';
 
 export default function SuccessPage() {
   const t = useTranslations('success');
-  const { clearCart } = useCart();
+  const { clearCart, items } = useCart();
 
-  useEffect(() => { clearCart(); }, []);
+  useEffect(() => {
+    if (items.length > 0) {
+      fetch('/api/notify-order', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          items: items.map(i => ({
+            id: i.id,
+            name: i.name,
+            price_clp: i.price_clp,
+            quantity: i.quantity
+          }))
+        })
+      }).catch(() => {});
+    }
+    clearCart();
+  }, []);
 
   return (
     <div className="max-w-xl mx-auto px-4 py-24 text-center">

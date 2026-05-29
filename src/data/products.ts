@@ -9,6 +9,7 @@ export interface Product {
   price_clp: number;
   images: string[];
   featured: boolean;
+  inStock: boolean;
   tags_es: string[];
   tags_en: string[];
 }
@@ -31,6 +32,7 @@ export const products: Product[] = [
       `${BASE}/chaqueta-crema-crochet-2.jpg`
     ],
     featured: false,
+    inStock: true,
     tags_es: ['lana virgen', 'telar chilote', 'crochet', 'crema', 'flecos'],
     tags_en: ['virgin wool', 'Chilote loom', 'crochet', 'cream', 'fringe']
   },
@@ -48,6 +50,7 @@ export const products: Product[] = [
       `${BASE}/abrigo-cafe-oversized-2.jpg`
     ],
     featured: false,
+    inStock: true,
     tags_es: ['lana virgen', 'telar chilote', 'café', 'oversized', 'invierno'],
     tags_en: ['virgin wool', 'Chilote loom', 'brown', 'oversized', 'winter']
   },
@@ -65,6 +68,7 @@ export const products: Product[] = [
       `${BASE}/abrigo-escoces-largo-2.jpg`
     ],
     featured: true,
+    inStock: true,
     tags_es: ['lana virgen', 'telar chilote', 'abrigo largo', 'escocés', 'tierra', 'colección'],
     tags_en: ['virgin wool', 'Chilote loom', 'long coat', 'tartan', 'earth tones', 'collection']
   },
@@ -81,6 +85,7 @@ export const products: Product[] = [
       `${BASE}/chaqueta-azul-teal.jpg`
     ],
     featured: false,
+    inStock: true,
     tags_es: ['lana virgen', 'telar chilote', 'teal', 'azul', 'denim', 'flecos'],
     tags_en: ['virgin wool', 'Chilote loom', 'teal', 'blue', 'denim', 'fringe']
   },
@@ -97,6 +102,7 @@ export const products: Product[] = [
       `${BASE}/abrigo-rojo-cuero.jpg`
     ],
     featured: true,
+    inStock: true,
     tags_es: ['lana virgen', 'telar chilote', 'rojo', 'cuero', 'abrigo'],
     tags_en: ['virgin wool', 'Chilote loom', 'red', 'leather', 'coat']
   },
@@ -114,6 +120,7 @@ export const products: Product[] = [
       `${BASE}/chaqueta-mostaza-rayada-2.jpg`
     ],
     featured: true,
+    inStock: true,
     tags_es: ['lana virgen', 'telar chilote', 'mostaza', 'rayas', 'artesanal'],
     tags_en: ['virgin wool', 'Chilote loom', 'mustard', 'striped', 'artisan']
   },
@@ -130,6 +137,7 @@ export const products: Product[] = [
       `${BASE}/chaqueta-turquesa-volados.jpg`
     ],
     featured: false,
+    inStock: true,
     tags_es: ['lana virgen', 'telar chilote', 'turquesa', 'volados', 'avant-garde'],
     tags_en: ['virgin wool', 'Chilote loom', 'turquoise', 'ruffle', 'avant-garde']
   },
@@ -148,6 +156,7 @@ export const products: Product[] = [
       `${BASE}/chal-tierra-pompones.jpg`
     ],
     featured: false,
+    inStock: true,
     tags_es: ['lana virgen', 'telar chilote', 'tierra', 'pompones', 'chal'],
     tags_en: ['virgin wool', 'Chilote loom', 'earth tones', 'pom-poms', 'shawl']
   },
@@ -164,6 +173,7 @@ export const products: Product[] = [
       `${BASE}/poncho-multicolor-turquesa.jpg`
     ],
     featured: false,
+    inStock: true,
     tags_es: ['lana virgen', 'tintes naturales', 'poncho', 'multicolor', 'turquesa'],
     tags_en: ['virgin wool', 'natural dyes', 'poncho', 'multicolor', 'turquoise']
   },
@@ -180,6 +190,7 @@ export const products: Product[] = [
       `${BASE}/poncho-mostaza-bordado.jpg`
     ],
     featured: false,
+    inStock: true,
     tags_es: ['lana virgen', 'telar chilote', 'mostaza', 'bordado', 'poncho'],
     tags_en: ['virgin wool', 'Chilote loom', 'mustard', 'embroidery', 'poncho']
   },
@@ -196,6 +207,7 @@ export const products: Product[] = [
       `${BASE}/poncho-verde-strelitzia.jpg`
     ],
     featured: true,
+    inStock: true,
     tags_es: ['lana virgen', 'tintes naturales', 'verde', 'bordado', 'strelitzia', 'artístico'],
     tags_en: ['virgin wool', 'natural dyes', 'green', 'embroidery', 'strelitzia', 'artistic']
   },
@@ -212,6 +224,7 @@ export const products: Product[] = [
       `${BASE}/chal-teal-bolsillos.jpg`
     ],
     featured: false,
+    inStock: true,
     tags_es: ['lana virgen', 'telar chilote', 'teal', 'azul', 'bolsillos', 'chal'],
     tags_en: ['virgin wool', 'Chilote loom', 'teal', 'blue', 'pockets', 'shawl']
   },
@@ -228,6 +241,7 @@ export const products: Product[] = [
       `${BASE}/chal-crema-macrame.jpg`
     ],
     featured: false,
+    inStock: true,
     tags_es: ['lana virgen', 'lana natural', 'macramé', 'crema', 'chal', 'artesanal'],
     tags_en: ['virgin wool', 'natural wool', 'macramé', 'cream', 'shawl', 'artisan']
   },
@@ -247,6 +261,7 @@ export const products: Product[] = [
       `${BASE}/vestido-mostaza-cuero-2.jpg`
     ],
     featured: false,
+    inStock: true,
     tags_es: ['lana virgen', 'telar chilote', 'vestido', 'mostaza', 'cuero', 'sin mangas'],
     tags_en: ['virgin wool', 'Chilote loom', 'dress', 'mustard', 'leather', 'sleeveless']
   }

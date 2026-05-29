@@ -7,10 +7,35 @@ export default function ContactPage() {
   const t = useTranslations('contact');
   const footer = useTranslations('footer');
   const [sent, setSent] = useState(false);
+  const [error, setError] = useState('');
+  const [sending, setSending] = useState(false);
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    setSent(true);
+    const form = e.currentTarget;
+    const name = (form.elements.namedItem('name') as HTMLInputElement).value;
+    const email = (form.elements.namedItem('email') as HTMLInputElement).value;
+    const message = (form.elements.namedItem('message') as HTMLTextAreaElement).value;
+
+    setSending(true);
+    setError('');
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, email, message })
+      });
+      if (res.ok) {
+        setSent(true);
+      } else {
+        setError(t('error'));
+      }
+    } catch {
+      setError(t('error'));
+    } finally {
+      setSending(false);
+    }
   }
 
   return (
@@ -24,6 +49,7 @@ export default function ContactPage() {
             <div>
               <label className="block text-sm font-medium text-charcoal mb-1">{t('name')}</label>
               <input
+                name="name"
                 type="text"
                 required
                 className="w-full border border-cream-dark bg-cream px-4 py-3 text-sm focus:outline-none focus:border-green-dark"
@@ -32,6 +58,7 @@ export default function ContactPage() {
             <div>
               <label className="block text-sm font-medium text-charcoal mb-1">{t('email')}</label>
               <input
+                name="email"
                 type="email"
                 required
                 className="w-full border border-cream-dark bg-cream px-4 py-3 text-sm focus:outline-none focus:border-green-dark"
@@ -40,16 +67,19 @@ export default function ContactPage() {
             <div>
               <label className="block text-sm font-medium text-charcoal mb-1">{t('message')}</label>
               <textarea
+                name="message"
                 required
                 rows={5}
                 className="w-full border border-cream-dark bg-cream px-4 py-3 text-sm focus:outline-none focus:border-green-dark resize-none"
               />
             </div>
+            {error && <p className="text-red-600 text-sm">{error}</p>}
             <button
               type="submit"
-              className="w-full bg-green-dark text-cream py-3 text-sm font-medium uppercase tracking-wide hover:bg-green-olive transition-colors"
+              disabled={sending}
+              className="w-full bg-green-dark text-cream py-3 text-sm font-medium uppercase tracking-wide hover:bg-green-olive transition-colors disabled:opacity-60"
             >
-              {t('send')}
+              {sending ? '...' : t('send')}
             </button>
           </form>
         )}

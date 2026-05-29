@@ -44,7 +44,10 @@
     "address": "Ladrilleros #852, Quellón, Chiloé, Chile",
     "phone": "+56 65 681144 · +56 9 99000630",
     "email": "ayenantu@gmail.com",
-    "rights": "Todos los derechos reservados."
+    "rights": "Todos los derechos reservados.",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos y Condiciones",
+    "returns": "Devoluciones"
   },
   "product": {
     "addToCart": "Agregar al carrito",
@@ -92,6 +95,7 @@
     "email": "Correo",
     "message": "Mensaje",
     "send": "Enviar",
-    "info": "También puedes contactarnos directamente:"
+    "info": "También puedes contactarnos directamente:",
+    "error": "Hubo un error al enviar. Por favor intenta de nuevo."
   }
 }

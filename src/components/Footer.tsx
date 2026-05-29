@@ -8,7 +8,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-green-dark text-cream mt-16">
-      <div className="max-w-6xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="max-w-6xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
         <div>
           <Image src="/logo.jpeg" alt="Ayenantú" width={140} height={48} className="h-12 w-auto mb-3" />
           <p className="text-sm text-cream/80">{t('tagline')}</p>
@@ -20,6 +20,19 @@ export default function Footer() {
           <Link href="/about" className="block hover:text-green-olive transition-colors">{nav('about')}</Link>
           <Link href="/care-guide" className="block hover:text-green-olive transition-colors">{nav('care')}</Link>
           <Link href="/contact" className="block hover:text-green-olive transition-colors">{nav('contact')}</Link>
+        </div>
+
+        <div className="text-sm space-y-2">
+          <p className="font-semibold uppercase tracking-wide text-green-olive text-xs mb-3">Legal</p>
+          <Link href="/privacy" className="block hover:text-green-olive transition-colors">
+            {t('privacy')}
+          </Link>
+          <Link href="/terms" className="block hover:text-green-olive transition-colors">
+            {t('terms')}
+          </Link>
+          <Link href="/returns" className="block hover:text-green-olive transition-colors">
+            {t('returns')}
+          </Link>
         </div>
 
         <div className="text-sm space-y-2">
